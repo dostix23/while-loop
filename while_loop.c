@@ -10,17 +10,5 @@ int main (int argc, char* argv[])
 	printf("Es wurde kein Dateipfad übergeben.\n");
 	}	
 
-	FILE* file=fopen("datei", "r");
-	if (file!= 0)
-	{
-		char zeichen;
-		while((zeichen=fgetc(file)) !=EOF) 
-		printf("\%c", zeichen);
-	}
-	else
-	{
-		printf("Fehler beim Öffnen der Datei. \n");
-	}
-
 return 0;
 }
